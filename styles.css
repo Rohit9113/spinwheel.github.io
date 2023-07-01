@@ -1,0 +1,88 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#spinButton {
+  margin-top: 17%;
+  margin-bottom: 13%;
+  height: 350px;
+  width: 350px;
+}
+
+.wheel {
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px 50px 0 0;
+  display: none;
+  margin-top: 58%;
+  margin-left: 7%;
+  animation-duration: 2s;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 34px solid rgb(251, 255, 0);
+  bottom: -20px;
+  left: -14px;
+}
+
+.animate {
+  animation-name: spin;
+}
+
+.animate1 {
+  animation-name: spin1;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(722deg);
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(490deg);
+  }
+}
+
+.spin-button {
+  background-color: #110047;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spin-button:hover {
+  background-color: #45a049;
+}
