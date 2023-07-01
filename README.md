@@ -4,7 +4,7 @@ This is a web page that implements a coupon wheel. Users can spin the wheel and 
 
 ## Demo
 
-You can try out the coupon wheel demo by visiting the hosted version [here]().
+You can try out the coupon wheel demo by visiting the hosted version [here](https://rohit9113.github.io/spinwheel.github.io/).
 
 ## Technologies Used
 
